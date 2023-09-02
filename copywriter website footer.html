@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=copywriter website footer , initial-scale=1.0">
+    <title>Document</title>
+    <!-- Copy Contect -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        #demo{
+            color:#fff;
+        }
+        #demo:after{
+            content:" . All right reserved.";
+        }
+        #demo:before{
+            content:"Copyright @ ";
+        }
+    </style>
+</head>
+<body>
+    <!-- copywriter website footer -->
+    <p id="demo"></p>
+<script>
+    var year = (new Date).getFullYear();
+    $( "#demo" ).text(year);
+</script>
+</body>
+</html>
